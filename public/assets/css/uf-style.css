@@ -1,0 +1,75 @@
+
+
+a{
+	color: #f39c12;
+	text-decoration: none;
+}
+a:hover{
+	color: #f39c12;
+}
+.uf-form-signin {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: auto;
+    
+}
+.uf-input-group .input-group-text {
+    background: #696969;
+    color: #f39c12;
+    border: unset;
+    font-size: 18px;
+    padding: 15px;
+    width: 50px;
+    height: 46px;
+}
+
+.uf-input-group .form-control {
+    border: unset;
+    border-left: 1px solid #ffffff05;
+    font-size: 20px;
+    background: #696969;
+    color: #f39c12;
+}
+
+.uf-input-group .form-control:focus {
+    box-shadow: unset;
+    background: #696969;
+}
+.uf-btn-primary {
+    background: #f39c12;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.uf-btn-primary:hover {
+    background: #f39c12;
+    color: #fff;
+    transform: scale(0.8);
+    transition: all 0.5s;
+}
+
+.uf-form-check-input:checked {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+.uf-social-login .uf-social-ic+.uf-social-ic{
+	margin-left: 15px;
+}
+.uf-social-ic{
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.uf-social-ic:hover{
+	background: #f39c12;
+}
+.uf-social-ic:hover i{
+	color: #fff;
+}
+

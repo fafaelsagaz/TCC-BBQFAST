@@ -1,0 +1,51 @@
+body{
+    height: 1000px;
+    background-image: linear-gradient(black,#424949 );
+}
+
+.text{
+    color: white;
+   
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.botao{
+  background-color: #f39c12;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 280px;
+ color: white;
+  
+}
+
+#bt1{
+  background-color: #f39c12;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 280px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#cas{
+color: white;
+}
+
+.container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#link{
+  color: #f39c12;
+}
+
+  img{
+    margin-top: 200px;
+    width: 350px;
+   
+  }
