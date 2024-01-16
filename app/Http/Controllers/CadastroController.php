@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class CadastroController extends Controller
 {
     public function Cadastro(){
-        return view('Cadastro');
+        return view('cadastro');
     }
 }
 

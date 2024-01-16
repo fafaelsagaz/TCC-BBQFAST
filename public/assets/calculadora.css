@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 60%;
+}
+
+.svg-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.h1-calc {
+    font-size: 24px;
+    color: #ffc971;
+}
+
+.h1-calcc {
+    color: #f3f8ff;
+    font-size: 24px;
+}
+
+.h2-calc {
+    font-size: 2rem;
+}
+
+.p-calc {
+    font-size: 2rem;
+}
+
+.label-calc {
+    font-size: 2rem;
+    color: #2f3131;
+}
+
+.input-calc {
+    font-size: 2rem;
+}
+
+.button-calc {
+    font-size: 2rem;
+}
+
+.container-calc {
+    max-width: 100%;
+    max-height: 100vh;
+
+    /*background: #ffc971;*/
+    background: #424949;
+}
+
+.text-content {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.text-content h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.text-content img {
+    max-width: 100%;
+}
+
+.box-calculo {
+    background: #f39c12;
+    border-radius: 4rem 0 0 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-calculo img {
+    width: 25rem;
+    margin-top: 2rem;
+}
+
+.form {
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.form .input-block-calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.box-calculo label {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.box-calculo input {
+    width: 100%;
+    height: 5.4rem;
+    /*background: #f3f8ff;*/
+    background: #424949;
+    border: none;
+    box-shadow: 0px 6px 20px rgba(35, 31, 32, 0.12);
+    color: #f3f8ff;
+    box-sizing: border-box;
+    border-radius: 3rem;
+
+    text-align: center;
+}
+
+.box-calculo input::placeholder {
+    color: #939199;
+}
+
+.box-calculo button {
+
+    width: 18.8rem;
+    height: 4.5rem;
+    background: #ffbb4d;
+    border: none;
+    color: #2f3131;
+    border-radius: 3.6rem;
+    box-shadow: rgba(35, 31, 32, 0.12) 0px 6px 20px;
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.box-calculo button:hover {
+    background: #ffbb4d;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+}
+
+/* css do resultado no js */
+.result-info {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #000;
+    width: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.result-block-calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem;
+    box-shadow: rgba(35, 31, 32, 0.12) 0px 6px 20px;
+    background-color: #ffbb4d;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.result-block-calc img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.result-block-calc p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-right: 1rem;
+    color: rgb(44, 44, 44);
+}
+
+/* Desktop Responsivity */
+
+@media (min-width: 700px) {
+    * {
+        overflow: hidden;
+    }
+
+    .text-content h1 {
+        font-size: 4rem;
+        width: 50rem;
+    }
+
+    .box-calculo {
+        height: 100vh;
+        background: #f39c12;
+        border-radius: 4rem 0 0 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form {
+        margin-top: 2rem;
+        width: 70%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 0;
+    }
+}
+
+/* Mobile Responsivity */
+
+@media (max-width: 700px) {
+    #resultado {
+        width: 90%;
+    }
+
+    .result-info {
+        margin-bottom: 3rem;
+    }
+
+    .result-block-calc {
+        justify-content: space-between;
+        margin: 1rem;
+        background-color: #ffbb4d;
+        padding: 1rem;
+        border-radius: 5rem;
+    }
+    .result-block-calc p {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        margin-right: 1rem;
+        margin-top: 1.5rem;
+        color: rgb(44, 44, 44);
+    }
+}

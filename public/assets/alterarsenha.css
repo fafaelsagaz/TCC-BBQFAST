@@ -1,0 +1,291 @@
+body {
+    max-height: 1600px;
+    min-height: 915px;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(black, #424949);
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    margin-top: 100px;
+    width: 400px;
+}
+
+#login {
+    border: solid #f7ac34 2px;
+    border-radius: 40px;
+    background-color: #212222;
+}
+
+#bar {
+    color: white;
+    background-color: white;
+}
+
+.voltar {
+    border: none;
+    background-color: transparent;
+    border: solid #f7ac34 2px;
+    color: #f39c12;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#card_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_main {
+    max-width: 380px;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    background-color: #424949;
+    padding: 30px 30px 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+}
+
+.heading {
+    display: flex;
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 500;
+    margin: 15px 0 30px 0;
+    justify-content: center;
+}
+
+.inputContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 10px;
+}
+
+.inputField {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    border-radius: 30px;
+    margin: 10px 0;
+    color: #f7ac34;
+    font-size: 1rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+
+}
+
+.inputField:focus {
+    outline: none;
+    border-bottom: 2px solid #f7ac34;
+}
+
+.inputField::placeholder {
+    color: #c4c1c1;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#button {
+    position: relative;
+    width: 100%;
+    border: 2px solid rgb(247, 172, 52);
+    background-color: rgb(247, 172, 52);
+    height: 40px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#button::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.253);
+    height: 100%;
+    width: 150px;
+    top: 0;
+    left: -200px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    filter: blur(10px);
+    transition-duration: .5s;
+}
+
+#button:hover::after {
+    transform: translateX(600px);
+    transition-duration: .5s;
+}
+
+.signupContainer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupContainer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.signupContainer a {
+    font-size: .7em;
+    font-weight: 500;
+    background-color: #868484;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: rgb(247, 172, 52);
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.btn-sign:active {
+    color: rgb(66, 73, 73);
+}
+
+#form-check {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbx {
+    position: relative;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.cbx:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 3.5px;
+    width: 5px;
+    height: 8px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+}
+
+.lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#cbx:checked~.cbx {
+    border-color: transparent;
+    background: #f7ac34;
+    animation: jelly 0.6s ease;
+}
+
+#cbx:checked~.cbx:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+.cntr {
+    position: relative;
+}
+
+@keyframes jelly {
+    from {
+        transform: scale(1, 1);
+    }
+
+    30% {
+        transform: scale(1.25, 0.75);
+    }
+
+    40% {
+        transform: scale(0.75, 1.25);
+    }
+
+    50% {
+        transform: scale(1.15, 0.85);
+    }
+
+    65% {
+        transform: scale(0.95, 1.05);
+    }
+
+    75% {
+        transform: scale(1.05, 0.95);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.hidden-xs-up {
+    display: none !important;
+}
+
+#exit{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}

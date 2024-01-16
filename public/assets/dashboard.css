@@ -1,0 +1,388 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 1600px;
+    min-height: 915px;
+    background-color: #424949;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 100% da altura da viewport */
+    margin: 0
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    flex: 1;
+    /* Ocupa o espaço restante na altura */
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+#midle:active {
+    transform: scale(1.1);
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    background-color: #f39c12;
+    box-shadow: rgba(35, 31, 32, 0.1) 0px 2px 8px 12px;
+    border-bottom: 2px solid #f39c12;
+    border-radius: 0% 0% 20% 20%;
+}
+
+.img-geral{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.svg-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.navbar-dark{
+    width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.saudacao {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.icon-user {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+    background-color: #424949;
+}
+
+.icon-user:hover {
+    transform: scale(1.1);
+    border: 2px solid #f39c12;
+}
+
+.form-inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0;
+}
+
+h5{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#text {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.title-dash {
+    display: flex;
+    justify-content: flex-start;
+}
+
+h2 {
+    color: #fff;
+    margin-left: 0.7rem;
+}
+
+#text {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.grid-dash {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.card-first-dash {
+    box-sizing: border-box;
+    max-width: 500px;
+    width: 100%;
+    height: 170px;
+    /*background: rgb(66, 73, 73);*/
+    background-color: #f39c12;
+    border: 2px solid #f39c12;
+    box-shadow: rgba(35, 31, 32, 0.425) 0px 0px 12px 8px;
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.card-first-dash:hover {
+    border: 1px solid #fff;
+    transform: scale(1.05);
+}
+
+.card-first-dash:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card-first-dash H3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-first-dash p{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#db-dados{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    width: 75px;
+    height: 75px;
+    background-color: #f16d00;
+    border-radius: 50%;
+}
+
+#db-dados-agen{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#db-empty{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-second-dash {
+    box-sizing: border-box;
+    max-width: 1100px;
+    width: 100%;
+    height: 220px;
+    background: rgb(32, 36, 36);
+    border: 2px solid #f39c12;
+    box-shadow: rgba(35, 31, 32, 0.425) 0px 0px 12px 8px;
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.card-second-dash:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.card-second-dash:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.plan-card-free {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+    width: 310px;
+    height: 150px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #f39c12;
+    box-shadow: 0 6px 30px #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.plan-card {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+    width: 310px;
+    height: 150px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #f39c12;
+    box-shadow: 0 6px 30px #f39c12;
+    font-family: "Poppins", sans-serif;
+}
+
+.plan-card h2 {
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plan-card-free h2 {
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plan-card span {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0px;
+    color: #FFF;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.etiquet-price {
+    position: relative;
+    background: #f39c12;
+    width: 300px;
+    margin-left: -0.65rem;
+    padding: .2rem 1.2rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.etiquet-price p {
+    margin: 0;
+    padding-top: .4rem;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.etiquet-price p:before {
+    content: "R$";
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.etiquet-price p:after {
+    content: "/ mês";
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.etiquet-price div {
+    position: absolute;
+    bottom: -23px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #c58102;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid transparent;
+    z-index: -6;
+}
+
+
+
+
+#text {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+/* Estilos para o footer */
+.main-footer {
+    flex: 0;
+    position: sticky;
+    z-index: 100;
+    bottom: 0;
+    background-color: #424949;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#svg-footer{
+    cursor: pointer;
+}
+
+#icons-footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-top: solid white 2px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 15px;
+    margin-bottom: 0.5rem;
+}

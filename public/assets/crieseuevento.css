@@ -1,0 +1,40 @@
+#img{
+margin-top: 100px;
+}
+
+.body{
+    background-image: url("./img/2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1024px 1200px;
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+}
+
+#evento{
+    color: white;
+    font-size: 35px;
+}
+
+#comeca{
+    color: lightgray;
+}
+
+#plus{
+    transition: transform 0.3s ease;
+}
+
+#plus:active{
+     transform: scale(1.1);
+}
+
+#exit{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}

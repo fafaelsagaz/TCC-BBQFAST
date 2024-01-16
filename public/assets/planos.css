@@ -1,0 +1,368 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    max-height: 1600px;
+    min-height: 915px;
+    background-color: #424949;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 100% da altura da viewport */
+    margin: 0
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    flex: 1;
+    /* Ocupa o espaço restante na altura */
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+#midle:active {
+    transform: scale(1.1);
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    background-color: #f39c12;
+    box-shadow: rgba(35, 31, 32, 0.1) 0px 2px 8px 12px;
+    border-bottom: 2px solid #f39c12;
+    border-radius: 0% 0% 20% 20%;
+}
+
+.svg-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.navbar-dark{
+    width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.saudacao {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.icon-user {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+    background-color: #424949;
+}
+
+.icon-user:hover {
+    transform: scale(1.1);
+    border: 2px solid #f39c12;
+}
+
+.navbar{
+    flex-wrap: nowrap;
+}
+
+.img-geral{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.form-inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0;
+}
+
+h5{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#text {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.card-perf {
+    width: 350px;
+    height: 90px;
+    margin-top: 1em;
+    border-radius: 30px;
+    background: #424949;
+    border: 2px dashed #f39c12;
+    box-shadow: rgba(35, 31, 32, 0.425) 0px 0px 8px 4px;
+}
+
+.title-perf {
+    color: #fff;
+    padding: 1em;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle_title{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#title-default{
+    margin-top: 0;
+}
+
+.plan-card {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+    width: 310px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #f39c12;
+    box-shadow: 0 6px 30px #f39c12;
+    font-family: "Poppins", sans-serif;
+}
+
+.plan-card h2 {
+    margin-bottom: 15px;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.plan-card h2 span {
+    display: block;
+    margin-top: -4px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.etiquet-price {
+    position: relative;
+    background: #f39c12;
+    width: 300px;
+    margin-left: -0.65rem;
+    padding: .2rem 1.2rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.etiquet-price p {
+    margin: 0;
+    padding-top: .4rem;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.etiquet-price p:before {
+    content: "R$";
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.etiquet-price p:after {
+    content: "/ mês";
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.etiquet-price div {
+    position: absolute;
+    bottom: -23px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #c58102;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid transparent;
+    z-index: -6;
+}
+
+.benefits-list {
+    margin-top: 16px;
+}
+
+.benefits-list ul {
+    padding: 0;
+    font-size: 14px;
+}
+
+.benefits-list ul li {
+    color: #fff;
+    list-style: none;
+    margin-bottom: .2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.benefits-list ul li svg {
+    width: .9rem;
+    fill: currentColor;
+}
+
+.benefits-list ul li span {
+    font-weight: 300;
+}
+
+.button-get-plan {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.button-get-plan a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f39c12;
+    border: 1px solid #f39c12;
+    color: #fff;
+    padding: 10px 15px;
+    width: 140px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+/*.button-get-plan button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.button-get-plan button:hover{
+    transform: translateY(-3%);
+    box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+}*/
+
+.button-get-plan a:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+}
+
+.button-get-plan .svg-rocket {
+    margin-right: 10px;
+    width: .9rem;
+    fill: currentColor;
+}
+
+.main-footer {
+    flex: 0;
+    position: sticky;
+    z-index: 100;
+    bottom: 0;
+    background-color: #424949;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#svg-footer{
+    cursor: pointer;
+}
+
+#icons-footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-top: solid white 2px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.card-prestador {
+    margin: 10px 20px 10px;
+}
